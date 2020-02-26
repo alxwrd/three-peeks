@@ -1,0 +1,44 @@
+{
+    "name": "three-peeks",
+    "version": "0.0.1",
+    "private": true,
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alxwrd/three-peeks.git"
+    },
+    "author": "Alex Ward (alxwrd@googlemail.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/alxwrd/three-peeks/issues"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "autobuild": "rollup -c -w",
+        "dev": "run-p start:dev autobuild",
+        "start": "sirv public",
+        "start:dev": "sirv public --dev",
+        "publish": "npm run build && gh-pages -d public"
+    },
+    "homepage": "https://github.com/alxwrd/three-peeks#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "gh-pages": "*",
+        "tailwindcss": "*",
+        "@fullhuman/postcss-purgecss": "*",
+        "autoprefixer": "*",
+        "npm-run-all": "*",
+        "postcss": "*",
+        "postcss-import": "*",
+        "rollup": "*",
+        "rollup-plugin-commonjs": "*",
+        "rollup-plugin-livereload": "*",
+        "rollup-plugin-node-resolve": "*",
+        "rollup-plugin-postcss": "*",
+        "rollup-plugin-svelte": "*",
+        "rollup-plugin-terser": "*",
+        "sirv-cli": "*",
+        "svelte": "*",
+        "svelte-preprocess": "*"
+    }
+}
