@@ -21,7 +21,9 @@
         "publish": "npm run build && gh-pages -d public"
     },
     "homepage": "https://github.com/alxwrd/three-peeks#readme",
-    "dependencies": {},
+    "dependencies": {
+        "yrv": "0.0.19"
+    },
     "devDependencies": {
         "gh-pages": "*",
         "tailwindcss": "*",
