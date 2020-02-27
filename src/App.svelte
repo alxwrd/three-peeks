@@ -9,6 +9,7 @@
 
 <Router>
   <Route exact component={Index} />
+  <Route exact path="#" component={Index} />
   <Route fallback>Not found</Route>
   <Route exact path="#climbers" component={Climbers}/>
   <Route exact path="#routes" component={Routes}/>
